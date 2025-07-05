@@ -1,70 +1,87 @@
-# Getting Started with Create React App
+# Pasale: Hyper-Local Retail Data Platform for Nepal
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Pasale is a simple, clean, and powerful Flutter application designed to digitize Nepal’s massive but largely offline retail sector. By making retail management easy and accessible for local shopkeepers, Pasale brings real-time inventory, sales tracking, and valuable analytics into the hands of 300,000+ stores across Nepal..
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+## ✨ Features
 
-### `npm start`
+- **Nepali Language Support:** Entire app is available in Nepali for easy use.
+- **Voice Command Integration:** Shopkeepers can add sales or inventory via voice, making entry effortless.
+- **Easy Inventory & Sales Tracking:** Simple forms to add and manage inventory and daily sales.
+- **Cloud Backup & Sync:** All data is automatically backed up and synced securely.
+- **Insights & Analytics:** Shopkeepers instantly see trends, top products, and recommendations powered by AI.
+- **Free Training & Incentives:** Onboarding flows and tutorials included to help users start quickly.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+---
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Prerequisites
 
-### `npm test`
+- [Flutter SDK](https://docs.flutter.dev/get-started/install) (v3.0 or higher recommended)
+- [Dart SDK](https://dart.dev/get-dart) (usually shipped with Flutter)
+- A device/emulator (Android/iOS)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Flutter Dependencies
 
-### `npm run build`
+Make sure your `pubspec.yaml` includes the following essentials (add or update as needed):
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+```yaml
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.2
+  provider: ^6.0.5
+  cloud_firestore: ^4.13.0
+  firebase_core: ^2.24.2
+  google_fonts: ^6.2.1
+  speech_to_text: ^6.6.0
+  intl: ^0.19.0
+  flutter_localizations:
+    sdk: flutter
+  shared_preferences: ^2.2.2
+  # Add more as needed for UI, charts, etc.
+```
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Run the following command in your project root to install dependencies:
+```sh
+flutter pub get
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Firebase Setup (if using Firestore/Cloud backup)
+1. [Set up Firebase for your Flutter app.](https://firebase.flutter.dev/docs/overview)
+2. Download `google-services.json` (Android) or `GoogleService-Info.plist` (iOS) and add to platform folders as instructed.
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+## How to Run
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/theaayushdev/Code2Convert_HackForBusiness.git
+   cd Code2Convert_HackForBusiness
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+2. **Install dependencies:**
+   ```sh
+   flutter pub get
+   ```
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+3. **Run on an emulator or device:**
+   ```sh
+   flutter run
+   ```
 
-## Learn More
+4. **For iOS:**  
+   Open `ios/` in Xcode, install pods with `pod install`, and ensure a valid iOS development environment.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+---
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## 🔍 Usage
 
-### Code Splitting
+- **Add Inventory / Sales:** Tap the plus (+) button, fill in the form, or use the microphone for voice input.
+- **View Insights:** See the dashboard for trends, top products, and suggestions.
+- **Settings & Onboarding:** Access app settings, language, and tutorials from the side menu.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+> Empowering small retailers in Nepal with simple, smart, and local digital tools.
